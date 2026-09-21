@@ -1,0 +1,1745 @@
+/* ==========================================================
+   AUTHENTIC LIVE COMPONENTS FOR REAL CLIENT WEBSITES
+   Kidney Specialist Inc & Big Bros Dumpster Rentals
+   ========================================================== */
+
+/* Container wrapper inside dialog */
+.kidney-live-component,
+.bigbros-live-component,
+.studio-live-component {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Mobile viewport container clamp */
+.website-preview.is-mobile .kidney-live-component,
+.website-preview.is-mobile .bigbros-live-component,
+.website-preview.is-mobile .studio-live-component {
+  max-width: 340px;
+}
+
+/* ==========================================================
+   1. KIDNEY SPECIALIST INC LIVE COMPONENT
+   ========================================================== */
+.klc-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  background: #132d20;
+  color: #a3e635;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.klc-emergency-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #e2e8f0;
+}
+
+.klc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  display: inline-block;
+}
+
+.klc-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.klc-contrast-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.klc-badge-hipaa {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #86efac;
+}
+
+.klc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.high-contrast .klc-header {
+  background: #0f241a;
+  border-bottom-color: #2e4a3b;
+}
+
+.klc-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.klc-crest {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.klc-brand-title {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #14532d;
+}
+
+.high-contrast .klc-brand-title {
+  color: #86efac;
+}
+
+.klc-brand-sub {
+  font-size: 10px;
+  color: #4b5563;
+  margin: 0;
+}
+
+.high-contrast .klc-brand-sub {
+  color: #cbd5e1;
+}
+
+.klc-header-phones {
+  display: flex;
+  gap: 10px;
+}
+
+.klc-call-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.klc-call-pill:hover {
+  background: #dcfce7;
+}
+
+.klc-hero-card {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.high-contrast .klc-hero-card {
+  background: #0d1e16;
+  border-bottom-color: #2e4a3b;
+}
+
+.klc-hero-content {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.klc-pill {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 12px;
+  width: fit-content;
+  margin-bottom: 14px;
+}
+
+.klc-hero-h1 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+  color: #14532d;
+}
+
+.high-contrast .klc-hero-h1 {
+  color: #ffffff;
+}
+
+.klc-hero-h1 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.klc-hero-p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0 0 20px;
+  max-width: 440px;
+}
+
+.high-contrast .klc-hero-p {
+  color: #e2e8f0;
+}
+
+.klc-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.klc-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: #166534;
+  color: #ffffff;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(22, 101, 52, 0.25);
+  transition: background 0.2s;
+}
+
+.klc-btn-primary:hover {
+  background: #14532d;
+}
+
+.klc-fax-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.klc-hero-image-wrap {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.klc-clinic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.klc-img-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+/* Doctors Section */
+.klc-doctors-section {
+  padding: 28px 24px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.high-contrast .klc-doctors-section {
+  background: #091710;
+  border-bottom-color: #2e4a3b;
+}
+
+.klc-section-header {
+  margin-bottom: 18px;
+}
+
+.klc-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  color: #15803d;
+  margin: 0 0 4px;
+}
+
+.klc-section-header h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.klc-subtitle {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 4px 0 0;
+}
+
+.high-contrast .klc-subtitle {
+  color: #cbd5e1;
+}
+
+.klc-doctors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.klc-doc-card {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  align-items: center;
+}
+
+.high-contrast .klc-doc-card {
+  background: #13271d;
+  border-color: #2e4a3b;
+}
+
+.klc-doc-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #bbf7d0;
+  flex-shrink: 0;
+}
+
+.klc-doc-meta h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 3px;
+}
+
+.klc-doc-title {
+  font-size: 11px;
+  color: #4b5563;
+  margin: 0 0 8px;
+}
+
+.high-contrast .klc-doc-title {
+  color: #cbd5e1;
+}
+
+.klc-doc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.klc-doc-tags span {
+  font-size: 9px;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Locations Interactive */
+.klc-locations-interactive {
+  padding: 28px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.high-contrast .klc-locations-interactive {
+  background: #0d1e16;
+  border-bottom-color: #2e4a3b;
+}
+
+.klc-loc-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.klc-loc-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.klc-loc-tab.is-active {
+  background: #166534;
+  color: #ffffff;
+  border-color: #166534;
+}
+
+.klc-loc-detail {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.high-contrast .klc-loc-detail {
+  background: #12241b;
+  border-color: #2e4a3b;
+}
+
+.klc-loc-info h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.klc-address, .klc-hours {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  margin: 0 0 8px;
+  color: #4b5563;
+}
+
+.high-contrast .klc-address, .high-contrast .klc-hours {
+  color: #cbd5e1;
+}
+
+.klc-loc-contacts {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 10px;
+}
+
+.klc-loc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: #166534;
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.klc-loc-fax {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.klc-loc-note {
+  font-size: 10px;
+  color: #94a3b8;
+  margin: 0;
+  font-style: italic;
+}
+
+.klc-loc-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* CKD eGFR Stage reference */
+.klc-egfr-tool {
+  padding: 28px 24px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.high-contrast .klc-egfr-tool {
+  background: #091710;
+  border-bottom-color: #2e4a3b;
+}
+
+.klc-stage-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.klc-stage-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 90px;
+  transition: all 0.2s;
+}
+
+.klc-stage-btn.is-selected {
+  border-width: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.klc-stage-num {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.klc-stage-range {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.klc-stage-card {
+  padding: 16px 20px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.high-contrast .klc-stage-card {
+  background: #12241b;
+  border-color: #2e4a3b;
+}
+
+.klc-stage-badge {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.klc-stage-action {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 6px;
+}
+
+.klc-stage-disclaimer {
+  font-size: 10px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Insurance search */
+.klc-insurance-tool {
+  padding: 28px 24px;
+  background: #ffffff;
+}
+
+.high-contrast .klc-insurance-tool {
+  background: #0d1e16;
+}
+
+.klc-search-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.klc-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.klc-search-input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12px;
+  outline: none;
+  background: #f8fafc;
+}
+
+.high-contrast .klc-search-input {
+  background: #14281e;
+  border-color: #2e4a3b;
+  color: #ffffff;
+}
+
+.klc-insurance-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.klc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 16px;
+  font-size: 11px;
+  color: #166534;
+  font-weight: 500;
+}
+
+.klc-chip-more {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Footer CTA */
+.klc-footer-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #14532d;
+  color: #ffffff;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.klc-footer-cta strong {
+  display: block;
+  font-size: 13px;
+}
+
+.klc-footer-cta span {
+  font-size: 10px;
+  color: #bbf7d0;
+}
+
+.klc-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #14532d;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Mobile adjustments */
+.is-mobile-view .klc-hero-card,
+.is-mobile-view .klc-doctors-grid,
+.is-mobile-view .klc-loc-detail {
+  grid-template-columns: 1fr;
+}
+
+.is-mobile-view .klc-header-phones {
+  flex-direction: column;
+  width: 100%;
+}
+
+.is-mobile-view .klc-hero-image-wrap {
+  min-height: 180px;
+}
+
+/* ==========================================================
+   2. BIG BROS DUMPSTER RENTALS LIVE COMPONENT
+   ========================================================== */
+.bbc-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  background: #431407;
+  color: #ffedd5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.bbc-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.bbc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f97316;
+  box-shadow: 0 0 8px #f97316;
+}
+
+.bbc-top-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bbc-lang-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bbc-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fed7aa;
+}
+
+.bbc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #fed7aa;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bbc-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bbc-logo-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #c2410c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bbc-brand-title {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: #9a3412;
+}
+
+.bbc-brand-sub {
+  font-size: 10px;
+  color: #78350f;
+  margin: 0;
+}
+
+.bbc-header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.bbc-call-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: #ea580c;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bbc-text-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: #ffedd5;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bbc-hero-card {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  background: #ffffff;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.bbc-hero-copy {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bbc-tag {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #c2410c;
+  background: #ffedd5;
+  padding: 4px 10px;
+  border-radius: 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.bbc-hero-h1 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+  color: #7c2d12;
+}
+
+.bbc-hero-desc {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #78350f;
+  margin: 0 0 20px;
+  max-width: 440px;
+}
+
+.bbc-hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.bbc-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  background: #ea580c;
+  color: #ffffff;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.bbc-guarantee-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.bbc-hero-media {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  background: #fcd34d;
+}
+
+.bbc-driveway-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bbc-media-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(124, 45, 18, 0.9);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Family section */
+.bbc-family-section {
+  padding: 28px 24px;
+  background: #fff7ed;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.bbc-family-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bbc-family-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.bbc-family-info h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #7c2d12;
+  margin: 0 0 8px;
+}
+
+.bbc-family-story {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #78350f;
+  margin: 0 0 12px;
+}
+
+.bbc-badges-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bbc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  background: #ffedd5;
+  color: #9a3412;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Sizing tool */
+.bbc-sizing-tool {
+  padding: 28px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.bbc-section-head {
+  margin-bottom: 18px;
+}
+
+.bbc-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  color: #ea580c;
+  margin: 0 0 4px;
+}
+
+.bbc-section-head h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #7c2d12;
+  margin: 0;
+}
+
+.bbc-sub {
+  font-size: 11px;
+  color: #9a3412;
+  margin: 4px 0 0;
+}
+
+.bbc-size-selector {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bbc-size-pill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.bbc-size-pill.is-active {
+  border-color: #ea580c;
+  border-width: 2px;
+  background: #ffedd5;
+}
+
+.bbc-size-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #7c2d12;
+}
+
+.bbc-size-price {
+  font-size: 16px;
+  font-weight: 900;
+  color: #ea580c;
+  margin: 2px 0;
+}
+
+.bbc-size-pop {
+  font-size: 9px;
+  font-weight: 700;
+  color: #c2410c;
+  text-transform: uppercase;
+}
+
+.bbc-specs-card {
+  padding: 20px;
+  background: #fffaf5;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+}
+
+.bbc-specs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #fed7aa;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.bbc-specs-header h5 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7c2d12;
+  margin: 0 0 4px;
+}
+
+.bbc-specs-dim {
+  font-size: 11px;
+  color: #78350f;
+  margin: 0;
+}
+
+.bbc-specs-price-box {
+  text-align: right;
+}
+
+.bbc-big-price {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ea580c;
+}
+
+.bbc-price-detail {
+  font-size: 10px;
+  color: #78350f;
+}
+
+.bbc-capacity-highlight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #ffedd5;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 14px;
+  color: #9a3412;
+}
+
+.bbc-fits-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.bbc-fits-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #7c2d12;
+  margin: 0 0 8px;
+}
+
+.bbc-fits-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #78350f;
+}
+
+/* Pile tool */
+.bbc-text-pile-tool {
+  padding: 24px;
+  background: #fff7ed;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.bbc-pile-card {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bbc-pile-info h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #7c2d12;
+  margin: 0 0 6px;
+}
+
+.bbc-pile-info p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #78350f;
+  margin: 0 0 12px;
+}
+
+.bbc-sms-box {
+  display: flex;
+  gap: 8px;
+}
+
+.bbc-pile-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #fdba74;
+  border-radius: 6px;
+  font-size: 11px;
+  outline: none;
+}
+
+.bbc-pile-btn {
+  padding: 8px 14px;
+  background: #ea580c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bbc-estimate-bubble {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #ffedd5;
+  border-radius: 6px;
+  font-size: 11px;
+  color: #7c2d12;
+}
+
+.bbc-pile-action-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.bbc-big-sms-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #16a34a;
+  color: #ffffff;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.bbc-sms-sub {
+  font-size: 10px;
+  color: #78350f;
+}
+
+/* Geo Radius */
+.bbc-radius-section {
+  padding: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.bbc-city-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.bbc-city-card {
+  padding: 10px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.bbc-city-card.is-selected {
+  border-color: #ea580c;
+  background: #ffedd5;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.15);
+}
+
+.bbc-city-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.bbc-city-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #78350f;
+}
+
+.bbc-city-fee {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+/* Job gallery strip */
+.bbc-job-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 20px 24px;
+  background: #fff7ed;
+}
+
+.bbc-gallery-item {
+  position: relative;
+  height: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bbc-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bbc-gallery-item span {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* Footer dispatch bar */
+.bbc-footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #9a3412;
+  color: #ffffff;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bbc-footer-bar strong {
+  display: block;
+  font-size: 13px;
+}
+
+.bbc-footer-bar span {
+  font-size: 10px;
+  color: #fed7aa;
+}
+
+.bbc-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #9a3412;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.is-mobile-view .bbc-hero-card,
+.is-mobile-view .bbc-family-card,
+.is-mobile-view .bbc-pile-card {
+  grid-template-columns: 1fr;
+}
+
+.is-mobile-view .bbc-city-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.is-mobile-view .bbc-fits-list ul {
+  grid-template-columns: 1fr;
+}
+
+/* ==========================================================
+   3. CLOVIS WEB DESIGN STUDIO LIVE COMPONENT
+   ========================================================= */
+.slc-topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 18px;
+  background: #24221f;
+  color: #f7f6f0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.slc-hero-box {
+  padding: 32px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e0;
+}
+
+.slc-eyebrow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #854d0e;
+  margin: 0 0 10px;
+}
+
+.slc-title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+}
+
+.slc-desc {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #57534e;
+  margin: 0 0 18px;
+  max-width: 480px;
+}
+
+.slc-nav-pills {
+  display: flex;
+  gap: 10px;
+}
+
+.slc-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #f5f5f0;
+  border: 1px solid #d6d3d1;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.slc-pill.is-active {
+  background: #24221f;
+  color: #ffffff;
+  border-color: #24221f;
+}
+
+.slc-vitals-section,
+.slc-scope-section {
+  padding: 24px;
+  background: #fafaf7;
+  border-bottom: 1px solid #e5e5e0;
+}
+
+.slc-table-wrap {
+  overflow-x: auto;
+}
+
+.slc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.slc-table th {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 2px solid #d6d3d1;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.slc-col-clovis {
+  color: #15803d;
+}
+
+.slc-col-agency {
+  color: #dc2626;
+}
+
+.slc-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e5e0;
+}
+
+.slc-metric-clovis {
+  font-weight: 700;
+  color: #15803d;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.slc-metric-agency {
+  color: #78716c;
+}
+
+.slc-metric-diff {
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.slc-vitals-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #78716c;
+  margin-top: 14px;
+}
+
+.slc-scope-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.slc-scope-btn {
+  padding: 6px 12px;
+  border: 1px solid #d6d3d1;
+  background: #ffffff;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.slc-scope-btn.is-selected {
+  background: #24221f;
+  color: #ffffff;
+  border-color: #24221f;
+}
+
+.slc-scope-card {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e0;
+  border-radius: 8px;
+}
+
+.slc-scope-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.slc-scope-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+
+.slc-scope-features div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.slc-scope-deliverable {
+  padding-top: 12px;
+  border-top: 1px solid #f5f5f0;
+  font-size: 11px;
+  color: #44403c;
+}
+
+.slc-footer-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #24221f;
+  color: #ffffff;
+}
+
+.slc-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #24221f;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ==========================================================
+   4. CASE STUDY STORY SPOTLIGHT STYLES
+   ========================================================== */
+.case-real-spotlight {
+  margin: 32px 0;
+  padding: 32px 28px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(41, 49, 37, 0.12);
+}
+
+.case-real-spotlight h3 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(24px, 2.5vw, 34px);
+  margin: 6px 0 20px;
+  line-height: 1.1;
+}
+
+.case-doctors-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.case-doctor-profile {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  align-items: center;
+}
+
+.case-doctor-profile img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #bbf7d0;
+  flex-shrink: 0;
+}
+
+.case-doctor-profile h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.doc-creds {
+  font-size: 11px;
+  color: #166534;
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+
+.doc-affil {
+  font-size: 10px;
+  color: #64748b;
+  margin: 0 0 6px;
+}
+
+.npi-tag {
+  font-size: 9px;
+  font-family: monospace;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #334155;
+}
+
+.case-clinic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.case-clinic-card {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.case-clinic-card img {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.case-clinic-card strong {
+  display: block;
+  font-size: 12px;
+  color: #1e293b;
+}
+
+.case-clinic-card p {
+  font-size: 10px;
+  color: #64748b;
+  margin: 2px 0;
+}
+
+.case-clinic-card span {
+  font-size: 10px;
+  color: #166534;
+  font-weight: 600;
+}
+
+/* Big Bros Story Spotlight */
+.case-family-showcase {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.case-family-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #fed7aa;
+}
+
+.case-family-story h4 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #7c2d12;
+  margin: 0 0 8px;
+}
+
+.case-family-story p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #78350f;
+  margin: 0 0 12px;
+}
+
+.case-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.case-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: #431407;
+}
+
+.case-job-strip {
+  display: flex;
+  gap: 10px;
+}
+
+.case-job-strip img {
+  width: 80px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #fed7aa;
+}
+
+@media (max-width: 640px) {
+  .case-doctors-showcase,
+  .case-clinic-grid,
+  .case-family-showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
